@@ -16,7 +16,7 @@
 | Column       | Primary Key | Foreign Key  | Type   | Option                   |
 |--------------|-------------|--------------|--------|--------------------------|
 | id           | TRUE        |              | 数値   | Auto Increment, Not NULL |
-| publisher_id |             | publisher.id | 数値   | Not NULL                 |
+| publisher_id |             | `publisher.id` | 数値   | Not NULL                 |
 | name         |             |              | 文字列 | Not NULL                 |
 | author       |             |              | 文字列 | Not NULL                 |
 
@@ -33,8 +33,8 @@
 
 | Column      | Primary Key | Foreign Key | Type   | Option   |
 |-------------|-------------|-------------|--------|----------|
-| user_id     | TRUE        | users.id    | 文字列 | Not NULL |
-| book_id     | TRUE        | books.id    | 数値   | Not NULL |
+| user_id     | TRUE        | `users.id`  | 文字列 | Not NULL |
+| book_id     | TRUE        | `books.id`  | 数値   | Not NULL |
 | start_date  | TRUE        |             | 日時   | Not NULL |
 | limit_date  |             |             | 日時   | Not NULL |
 | return_date |             |             | 日時   |          |
