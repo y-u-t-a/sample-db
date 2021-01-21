@@ -1,0 +1,3 @@
+# sample-db
+
+サンプルDB集
