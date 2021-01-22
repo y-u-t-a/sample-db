@@ -9,6 +9,8 @@ CREATE TABLE publisher (
 CREATE TABLE books (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   publisher_id INT UNSIGNED,
+  name VARCHAR(800),
+  author VARCHAR(400),
   PRIMARY KEY (id),
   FOREIGN KEY (publisher_id)
     REFERENCES publisher(id)
