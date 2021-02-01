@@ -18,3 +18,10 @@ services:
       MYSQL_ROOT_PASSWORD: root
     ports:
       - 8080:80
+  python:
+    build:
+      context: ./script/python
+      dockerfile: Dockerfile
+    container_name: python_env
+    command: bash
+    tty: true
