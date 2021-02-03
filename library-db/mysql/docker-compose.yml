@@ -14,7 +14,7 @@ services:
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
     environment:
-      PMA_HOST: host.docker.internal
+      PMA_HOST: db # 同一 docker-compose 内であればサービス名でコンテナを名前解決できる
       MYSQL_ROOT_PASSWORD: root
     ports:
       - 8080:80
