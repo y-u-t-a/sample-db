@@ -23,5 +23,7 @@ services:
       context: ./script/python
       dockerfile: Dockerfile
     container_name: python_env
+    environment:
+      DB_HOST: db # サービス名でコンテナを名前解決できる
     command: bash
     tty: true
