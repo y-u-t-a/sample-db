@@ -1,4 +1,3 @@
-# coding:utf_8
 import random
 
 # 子どもの名前ランキングから抜粋
