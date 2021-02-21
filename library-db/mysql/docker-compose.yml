@@ -9,6 +9,7 @@ services:
       TZ: 'Asia/Tokyo'
     volumes:
       - ./sql:/docker-entrypoint-initdb.d
+      - ./conf:/etc/mysql/conf.d
     ports:
       - 3306:3306
   phpmyadmin:
