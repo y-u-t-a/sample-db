@@ -1,4 +1,5 @@
 import random
+import string
 
 # 子どもの名前ランキングから抜粋
 FIRST_NAMES = (
@@ -20,3 +21,9 @@ def random_name():
 
 def random_book_name():
     return random.choice(BOOK_NAME_FIRST) + random.choice(BOOK_NAME_SECOND)
+
+def random_email_address():
+    source = string.ascii_lowercase + string.digits
+    # email を varchar(200) で定義していて、ドメイン部分を 12 文字で固定しているため最大の長さは 188
+    length = random.choice(range(5, 188))
+    return ''.join(random.choices(source, k=length)) + "@sample.test"
