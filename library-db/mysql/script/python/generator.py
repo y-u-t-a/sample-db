@@ -15,7 +15,7 @@ BOOK_NAME_SECOND = (
     '仕事術', '時間術', '交渉術', '読書術', '力', 'が9割', '筋トレ', '大全', '習慣', '思考', '組織', '図鑑', '入門', '実践', '一年目が学ぶこと', 'シンキング', 'をしなさい', 'をやめなさい', 'の科学', '理論'
 )
 
-def random_author_name():
+def random_name():
     return random.choice(LAST_NAMES) + random.choice(FIRST_NAMES)
 
 def random_book_name():

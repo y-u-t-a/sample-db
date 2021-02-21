@@ -24,7 +24,7 @@ class Commands():
     for i in range(count):
       publisher_id = random.choice(publisher_list)[0] # SELECT の結果はタプルなので 1つ目の要素を参照する
       book_name = generator.random_book_name()
-      author = generator.random_author_name()
+      author = generator.random_name()
       book_list.append((publisher_id, book_name, author))
     sql = "INSERT INTO books (publisher_id, name, author) VALUES (%s, %s, %s)"
     db.bulk_insert(sql, book_list)
