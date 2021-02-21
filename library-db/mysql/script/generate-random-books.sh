@@ -1,0 +1,1 @@
+docker exec python_env python3 books.py register_random_book "$@"
