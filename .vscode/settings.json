@@ -1,0 +1,5 @@
+{
+  "python.autoComplete.extraPaths": [
+    "./library-db/mysql/script/python"
+  ]
+}
