@@ -2,11 +2,11 @@
 	"name": "Python",
 	"dockerComposeFile": "../docker-compose.yml",
 	"service": "python",
-	"workspaceFolder": "/app",
+	"workspaceFolder": "/script/python",
 	"settings": {
 		"python.autoComplete.extraPaths":[
 			"/usr/local/lib/*/site-packages",
-			"./",
+			"./python",
 		],
 		"python.pythonPath": "/usr/bin/python3",
 		"python.languageServer": "Microsoft",

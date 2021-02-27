@@ -26,5 +26,7 @@ services:
     container_name: python_env
     environment:
       DB_HOST: db # サービス名でコンテナを名前解決できる
+    volumes:
+      - ./script/data:/script/data
     command: bash
     tty: true

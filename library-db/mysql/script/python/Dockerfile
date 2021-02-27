@@ -8,6 +8,6 @@ RUN apt-get update \
         less
 RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" \
     && python3 get-pip.py
-WORKDIR /app
+WORKDIR /script/python
 COPY . .
 RUN pip install -r requirements.txt
