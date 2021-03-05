@@ -28,5 +28,6 @@ services:
       DB_HOST: db # サービス名でコンテナを名前解決できる
     volumes:
       - ./script/data:/script/data
+      - ./script/python:/script/python
     command: bash
     tty: true
