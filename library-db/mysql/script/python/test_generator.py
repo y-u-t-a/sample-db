@@ -28,8 +28,8 @@ def test_ランダムな書籍名を10回生成して重複がないこと():
 def test_ランダムなemailを生成できること():
   random_email = generator.random_email_address()
   assert random_email.endswith('@sample.test')
-  assert len(random_email) >= 17 #固定文字列 + ランダム文字列の最小の長さ
-  assert len(random_email) <= 200
+  assert len(random_email) >= 17 # 固定文字列 + ランダム文字列の最小の長さ
+  assert len(random_email) <= 200 # 固定文字列 + ランダム文字列の最大の長さ
 
 def test_ランダムなemailを10回生成して重複がないこと():
   email_list = []
