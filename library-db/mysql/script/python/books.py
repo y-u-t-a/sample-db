@@ -12,12 +12,18 @@ class Book:
 
 class Commands():
   def get_all_books(self):
+    """
+    books を全件取得する
+    """
     sql = "SELECT * FROM books"
     table = db.execute_select(sql)
     books = [Book(*row) for row in table] # タプルを展開してコンストラクタの引数に渡す
     [print(book.__dict__) for book in books]
 
   def register_random_book(self, count=1):
+    """
+    ランダムで books を登録する
+    """
     print(f"{count} 件ランダムで books を登録します")
     publisher_list = db.execute_select("SELECT id FROM publisher")
     book_list = []
