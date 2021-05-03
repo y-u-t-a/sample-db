@@ -31,3 +31,5 @@ services:
       - ./script/python:/script/python
     command: bash
     tty: true
+    depends_on:
+      - db
