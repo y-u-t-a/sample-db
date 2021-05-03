@@ -18,4 +18,4 @@ jobs:
       working-directory: library-db/mysql
       run: |
         docker-compose up --build -d db python
-        docker exec -it -w /script/python python_env pytest
+        docker exec -w /script/python python_env pytest
