@@ -5,7 +5,7 @@ on:
     branches: [ main ]
     paths:
       - ".github/workflows/library-db-python.yaml"
-      - "library-db/mysql"
+      - "library-db/mysql/**"
       - "!library-db/mysql/**.md"
   workflow_dispatch:
 
