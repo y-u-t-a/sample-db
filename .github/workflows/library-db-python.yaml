@@ -12,18 +12,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.9
-    - name: Install dependencies
-      working-directory: library-db/mysql/script/python
-      run: |
-        pip3 install -r requirements.txt
-    - name: Test with pytest
+    - name: Test with pytest on container
       working-directory: library-db/mysql
       run: |
-        docker-compose up --build -d db
-        cd script/python
-        python3 -m pytest
+        docker-compose up --build -d db python
+        docker exec -w /script/python python_env pytest
