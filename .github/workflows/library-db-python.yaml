@@ -1,4 +1,4 @@
-name: Python application
+name: library-db Python
 
 on:
   push:
