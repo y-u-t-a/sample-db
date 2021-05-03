@@ -16,7 +16,7 @@ jobs:
     - name: Set up test DB
       working-directory: library-db/mysql
       run: |
-        docker compose up --build -d db
+        docker-compose up --build -d db
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
